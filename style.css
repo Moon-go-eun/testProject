@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul.menu > li,
+ul.menu > li ul.submenu > li {
+  display: inline-block;
+  width: 300px;
+  padding: 9px 10px;
+  background: green;
+  border: 1px solid green;
+  text-align: center;
+}
+ul.menu > li {
+  position: relative;
+}
+ul.menu > li:hover,
+ul.menu > li ul.submenu > li:hover {
+  background: greenyellow;
+}
+ul.menu > li ul.submenu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+ul.menu > li:hover ul.submenu {
+  display: block;
+}
