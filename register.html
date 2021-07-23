@@ -25,38 +25,29 @@
             <td><input type="password" name="pass" /></td>
           </tr>
           <tr>
-            <td>비밀번호확인</td>
+            <td>비밀번호 확인</td>
             <td><input type="password" name="passck" /></td>
           </tr>
           <tr>
             <td>성별</td>
             <td>
               <input type="radio" name="gender" value="m" /> 남
-              <input type="radio" name="gender" value="f" checked="checked" /> 여
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">관심분야</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <input type="checkbox" name="interest" value="빅데이터" /> 빅데이터
-              <input type="checkbox" name="interest" value="딥러닝" checked="checked" /> 딥러닝
-              <input type="checkbox" name="interest" value="머신러닝" /> 머신러닝
-              <input type="checkbox" name="interest" value="인공지능" /> 인공지능
+              <input type="radio" name="gender" value="f" /> 여
             </td>
           </tr>
           <tr>
             <td>이메일</td>
             <td>
-              <input type="text" name="email1" size="7" />@
+              <input type="text" name="email1" size="7" /> @
               <input type="text" name="email2" size="15" />
               <select name="email3">
-                <option value="naver.com">네이버</option>
-                <option value="daum.net">다음</option>
-                <option value="gmail.com">구글</option>
+                <option value="naver.com">naver.com</option>
+                <option value="daum.net">daum.net</option>
+                <option value="gmail.com">gmail.com</option>
                 <option value="" selected="selected">직접입력</option>
               </select>
+              <input type="checkbox" name="interest" value="수신동의" /> 정보/이벤트 메일 수신에
+              동의합니다.
             </td>
           </tr>
           <tr>
@@ -74,15 +65,28 @@
               -
               <input type="text" size="4" maxlength="4" name="tel2" /> -
               <input type="text" size="4" maxlength="4" name="tel2" />
+              <input type="checkbox" name="interest" value="수신동의" /> 정보/이벤트 SMS 수신에
+              동의합니다.
             </td>
           </tr>
           <tr>
-            <td>자기소개</td>
+            <td width="100">주소</td>
             <td>
-              <textarea rows="5" cols="47"></textarea>
+              <div class="adress_post code">
+                <input type="tet" name="zonecode" readonly="readonly" value="" />
+                <button type="button" id="btnPostcode" class="btn_post_search">우편번호</button>
+                <input type="hidden" name="zipcode" value="" />
+              </div>
+              <div class="address_input">
+                <div class="mamber_warning">
+                  <input type="text" name="address" readonly="readonly" value="" />
+                  <div class="member_warning js_address_sub">
+                    <input type="text" name="addressSub" value="" />
+                  </div>
+                </div>
+              </div>
             </td>
           </tr>
-          <tr>
             <td colspan="2" align="center">
               <input type="submit" value="회원가입" />
               <input type="reset" value="초기화" />
