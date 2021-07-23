@@ -2,11 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    회원가입
+    <div>
+      <h2>회원 가입</h2>
+      <form>
+        <table border="1">
+          <tr>
+            <td width="100">이름</td>
+            <td><input type="text" name="username" /></td>
+          </tr>
+          <tr>
+            <td>아이디</td>
+            <td>
+              <input type="text" name="userid" />
+              <input type="button" value="중복확인" />
+            </td>
+          </tr>
+          <tr>
+            <td>비밀번호</td>
+            <td><input type="password" name="pass" /></td>
+          </tr>
+          <tr>
+            <td>비밀번호확인</td>
+            <td><input type="password" name="passck" /></td>
+          </tr>
+          <tr>
+            <td>성별</td>
+            <td>
+              <input type="radio" name="gender" value="m" /> 남
+              <input type="radio" name="gender" value="f" checked="checked" /> 여
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">관심분야</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="interest" value="빅데이터" /> 빅데이터
+              <input type="checkbox" name="interest" value="딥러닝" checked="checked" /> 딥러닝
+              <input type="checkbox" name="interest" value="머신러닝" /> 머신러닝
+              <input type="checkbox" name="interest" value="인공지능" /> 인공지능
+            </td>
+          </tr>
+          <tr>
+            <td>이메일</td>
+            <td>
+              <input type="text" name="email1" size="7" />@
+              <input type="text" name="email2" size="15" />
+              <select name="email3">
+                <option value="naver.com">네이버</option>
+                <option value="daum.net">다음</option>
+                <option value="gmail.com">구글</option>
+                <option value="" selected="selected">직접입력</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>연락처</td>
+            <td>
+              <select name="area">
+                <option value="010">010</option>
+                <option value="02" selected="selected">02</option>
+                <option value="031">031</option>
+                <option value="041">041</option>
+                <option value="051">051</option>
+                <option value="061">061</option>
+              </select>
+
+              -
+              <input type="text" size="4" maxlength="4" name="tel2" /> -
+              <input type="text" size="4" maxlength="4" name="tel2" />
+            </td>
+          </tr>
+          <tr>
+            <td>자기소개</td>
+            <td>
+              <textarea rows="5" cols="47"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="회원가입" />
+              <input type="reset" value="초기화" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
   </body>
 </html>
